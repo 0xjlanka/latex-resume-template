@@ -49,10 +49,13 @@
 \def \websitelink {https://google.com/}
 \def \websitetext {dwightschrute.com}
 
+\def \addressicon {\faMapMarker}
+\def \addresstext {Vancouver, BC, Canada}
+
 \def \headertype {\doublecol} % \singlecol or \doublecol
 
 % Misc settings
-\def \entryspacing {-0pt}
+\def \entryspacing {0pt}
 
 \def \bulletstyle {\faAngleRight}
 
@@ -70,6 +73,7 @@
 \def \email {\emailicon \hspace{3pt}\href{\emaillink}{\emailtext}}
 \def \github {\githubicon \hspace{3pt}\href{\githublink}{\githubtext}}
 \def \website {\websiteicon \hspace{3pt}\href{\websitelink}{\websitetext}}
+\def \address {\addressicon \hspace{3pt}{ \addresstext}}
 
 % Adjust margins
 \addtolength{\oddsidemargin}{-0.55in}
@@ -194,7 +198,7 @@
 
 %---------------------------------------------------- HEADER ----------------------------------------------------
 
-\headertype{\linkedin}{\github}{\website}{\phone}{\email}{} % Set the order of items here
+\headertype{\linkedin}{\github}{\website}{\phone}{\email}{\address} % Set the order of items here
 \vspace{-10pt} % Set a negative value to push the body up, and the opposite
 
 %-------------------------------------------------- EDUCATION --------------------------------------------------
